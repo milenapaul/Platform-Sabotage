@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><i>CSS Experiment 1</i></title>
+    <style>
+    @font-face {
+      font-family: 'bianzhidai_colrgray';
+      src: url('bianzhidai_colr-gray.woff2') format('woff2'),
+            url('bianzhidai_colr-gray.woff') format('woff');
+            url('bianzhidai_colr-gray.otf') format('otf');
+      font-weight: normal;
+      font-style: normal;
+}
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }   
+ .typeset1 {
+    font-family: 'bianzhidai_colrgray';
+    color: rgb(255, 0, 0);
+    text-align: center;
+    background: linear-gradient(90deg, orange, pink);
+    margin: 30px;
+ }
+ .typeset2 {
+    background: radial-gradient(orange, pink);
+    font-family: "bianzhidai_colrgray";
+    color: red;
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+    Border-radius: 900px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px purple;
+ }
+
+ .typeset3 {
+    background: radial-gradient(orange, pink);
+    font-family: "bianzhidai_colrgray";
+    color: red;
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 900px;
+    letter-spacing: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+    </style> 
+
+</head>
+<body> 
+    <div class="typeset1">stinky <i>stinky</i> <b>stinky</b> STINKY <i>STINKY</i> <b>STINKY</b></div>
+    <div class="typeset2">stinky <i>stinky</i> <b>stinky</b> STINKY <i>STINKY</i> <b>STINKY</b></div>
+    <div class="typeset3">stinky <i>stinky</i> <b>stinky</b> STINKY <i>STINKY</i> <b>STINKY</b></div> 
+</body>
+</html>
